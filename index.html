@@ -98,59 +98,10 @@
             position: relative;
             overflow: hidden;
         }
-
-        .kai-logo {
+        .header-icon img {
             width: 100%;
             height: 100%;
-            position: relative;
-            display: block;
-            line-height: 1;
-        }
-
-        .kai-logo strong {
-            position: absolute;
-            top: 0;
-            left: 4px;
-            font-size: 4.9rem;
-            font-weight: 900;
-            letter-spacing: -7px;
-            transform: skewX(-8deg);
-        }
-
-        .kai-logo span {
-            position: absolute;
-            right: -5px;
-            bottom: -1px;
-            color: #4fbd62;
-            font-size: 2.35rem;
-            font-weight: 800;
-            letter-spacing: -1px;
-        }
-
-        .kai-logo::after {
-            content: '';
-            position: absolute;
-            left: 3px;
-            right: 2px;
-            top: 47px;
-            height: 8px;
-            background: #f59e0b;
-            transform: rotate(-24deg) skewX(-22deg);
-            transform-origin: center;
-            z-index: 1;
-        }
-
-        .kai-logo::before {
-            content: '';
-            position: absolute;
-            left: 12px;
-            right: 8px;
-            top: 48px;
-            height: 3px;
-            background: #ffffff;
-            transform: rotate(-24deg) skewX(-22deg);
-            transform-origin: center;
-            z-index: 2;
+            object-fit: contain;
         }
 
         .header h1 {
@@ -457,9 +408,7 @@
         <!-- Header -->
         <div class="header">
             <div class="header-icon">
-                <div class="kai-logo" aria-label="KAI Service">
-                    <strong>KAI</strong><span>Services</span>
-                </div>
+                <img src="Logo_KAI_Services (1).svg" alt="KAI Services">
             </div>
             <h1>Dashboard Pintasan</h1>
             <p>Akses cepat ke semua sistem keuangan RO 4 Semarang</p>
