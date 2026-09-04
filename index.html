@@ -84,50 +84,73 @@
         }
 
         .header-icon {
-            width: 118px;
-            height: 70px;
-            background: #f8fafc;
-            border: 4px solid #f59e0b;
-            border-radius: 14px 14px 22px 14px;
+            width: 220px;
+            height: 112px;
+            background: transparent;
+            border: 0;
+            border-radius: 0;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 20px;
-            color: #123b72;
-            box-shadow: 0 10px 40px rgba(245, 158, 11, 0.25);
+            color: #4d4d8e;
+            filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.2));
             position: relative;
             overflow: hidden;
         }
 
         .kai-logo {
-            display: flex;
-            align-items: baseline;
-            gap: 3px;
-            font-style: italic;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: block;
             line-height: 1;
         }
 
         .kai-logo strong {
-            font-size: 1.8rem;
-            font-weight: 800;
-            letter-spacing: 0;
+            position: absolute;
+            top: 0;
+            left: 4px;
+            font-size: 4.9rem;
+            font-weight: 900;
+            letter-spacing: -7px;
+            transform: skewX(-8deg);
         }
 
         .kai-logo span {
-            font-size: 0.55rem;
-            font-weight: 700;
-            letter-spacing: 0;
+            position: absolute;
+            right: -5px;
+            bottom: -1px;
+            color: #4fbd62;
+            font-size: 2.35rem;
+            font-weight: 800;
+            letter-spacing: -1px;
         }
 
         .kai-logo::after {
             content: '';
             position: absolute;
-            left: 16px;
-            right: 16px;
-            bottom: 10px;
-            height: 3px;
+            left: 3px;
+            right: 2px;
+            top: 47px;
+            height: 8px;
             background: #f59e0b;
-            transform: skewX(-35deg);
+            transform: rotate(-24deg) skewX(-22deg);
+            transform-origin: center;
+            z-index: 1;
+        }
+
+        .kai-logo::before {
+            content: '';
+            position: absolute;
+            left: 12px;
+            right: 8px;
+            top: 48px;
+            height: 3px;
+            background: #ffffff;
+            transform: rotate(-24deg) skewX(-22deg);
+            transform-origin: center;
+            z-index: 2;
         }
 
         .header h1 {
@@ -399,6 +422,7 @@
         /* Responsive */
         @media (max-width: 768px) {
             .container { padding: 25px 15px; }
+            .header-icon { transform: scale(0.82); margin-bottom: 4px; }
             .header h1 { font-size: 1.7rem; }
             .grid { grid-template-columns: 1fr; }
             .card { padding: 18px; }
@@ -434,7 +458,7 @@
         <div class="header">
             <div class="header-icon">
                 <div class="kai-logo" aria-label="KAI Service">
-                    <strong>KAI</strong><span>Service</span>
+                    <strong>KAI</strong><span>Services</span>
                 </div>
             </div>
             <h1>Dashboard Pintasan</h1>
