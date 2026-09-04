@@ -1,0 +1,6 @@
+title: keuRO4
+description: Personal website of keuRO4
+theme: minima
+
+plugins:
+  - jekyll-feed
