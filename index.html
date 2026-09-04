@@ -84,17 +84,50 @@
         }
 
         .header-icon {
-            width: 70px;
+            width: 118px;
             height: 70px;
-            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-            border-radius: 20px;
+            background: #f8fafc;
+            border: 4px solid #f59e0b;
+            border-radius: 14px 14px 22px 14px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 20px;
-            font-size: 30px;
-            color: white;
-            box-shadow: 0 10px 40px rgba(59, 130, 246, 0.3);
+            color: #123b72;
+            box-shadow: 0 10px 40px rgba(245, 158, 11, 0.25);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .kai-logo {
+            display: flex;
+            align-items: baseline;
+            gap: 3px;
+            font-style: italic;
+            line-height: 1;
+        }
+
+        .kai-logo strong {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: 0;
+        }
+
+        .kai-logo span {
+            font-size: 0.55rem;
+            font-weight: 700;
+            letter-spacing: 0;
+        }
+
+        .kai-logo::after {
+            content: '';
+            position: absolute;
+            left: 16px;
+            right: 16px;
+            bottom: 10px;
+            height: 3px;
+            background: #f59e0b;
+            transform: skewX(-35deg);
         }
 
         .header h1 {
@@ -400,7 +433,9 @@
         <!-- Header -->
         <div class="header">
             <div class="header-icon">
-                <i class="fas fa-bolt"></i>
+                <div class="kai-logo" aria-label="KAI Service">
+                    <strong>KAI</strong><span>Service</span>
+                </div>
             </div>
             <h1>Dashboard Pintasan</h1>
             <p>Akses cepat ke semua sistem keuangan RO 4 Semarang</p>
